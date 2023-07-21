@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 /**
- * @typedef {object} GameData - Structure to hold information for each game
+ * @typedef  {object} GameData - Structure to hold information for each game
  * @property {number} total_kills - Total kills in the game
  * @property {string[]} players - List of players in the game
  * @property {object} kills - Kill count of each player
@@ -35,8 +35,8 @@ class QuakeLogParser {
 
   /**
    * Parses each line of the log
-   * @param {string} line - Each line of the log
-   * @param {GameData} currentGame - Current game data
+   * @param   {string} line - Each line of the log
+   * @param   {GameData} currentGame - Current game data
    * @returns {GameData} - Updated game data
    */
   parseLine(line: string, currentGame: GameData): GameData {
@@ -108,7 +108,7 @@ class QuakeLogParser {
 
   /**
    * Parses the whole log file and generates game data for each game
-   * @param {string} filename - Name of the log file
+   * @param   {string} filename - Name of the log file
    * @returns {object} - An object with game data for each game
    */
   parseLogFile(filename: string): Record<string, GameData> {
