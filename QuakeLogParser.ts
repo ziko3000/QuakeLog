@@ -28,7 +28,7 @@ const defaultGameData: GameData = {
 };
 
 
-//  @class QuakeLogParser - Class for parsing quake logs
+//@class QuakeLogParser - Class for parsing quake logs
 
 class QuakeLogParser {
   private gameCount: number = 1; // count of games, initialized with 1
