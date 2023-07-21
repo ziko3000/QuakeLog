@@ -96,12 +96,15 @@ class QuakeLogParser {
           .map(([player]) => player);
       }
 
-      return newGame; // Return the updated game data
-    } catch (err: any) {
-      console.error(`Failed to parse log line. Error: ${err.message}`);
-      return currentGame;
-    }
+    // After processing the log line, we return the updated game data.
+    return newGame; // Return the updated game data
+  } catch (err: any) {
+    // If an error occurs during parsing (e.g., unexpected log format),
+    // we catch the error, log the details, and return the current game data without any changes.
+    console.error(`Failed to parse log line. Error: ${err.message}`);
+    return currentGame;
   }
+}
 
   /**
    * Parses the whole log file and generates game data for each game
