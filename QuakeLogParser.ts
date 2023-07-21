@@ -16,9 +16,8 @@ interface GameData {
   player_ranking:    string[];
 }
 
-/**
- * Default game data
- */
+// Default game data
+
 const defaultGameData: GameData = {
   total_kills:    0,
   players:        [],
@@ -27,9 +26,7 @@ const defaultGameData: GameData = {
   player_ranking: [],
 };
 
-
 //@class QuakeLogParser - Class for parsing quake logs
-
 class QuakeLogParser {
   private gameCount: number = 1; // count of games, initialized with 1
 
@@ -159,8 +156,6 @@ class QuakeLogParser {
   }
 }
 
-/**
- * Create a new instance of QuakeLogParser and parse a log file
- */
+ // Create a new instance of QuakeLogParser and parse a log file
 const parser = new QuakeLogParser();
 parser.parseAndReport('qgames.log');
