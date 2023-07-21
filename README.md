@@ -8,7 +8,6 @@ Welcome to Quake Log Parser, a tool for parsing Quake game logs and generating g
 - [Getting Started](#getting-started)
 - [Customization](#customization)
 - [Examples](#examples)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
